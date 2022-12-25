@@ -7,21 +7,11 @@
     <title>Bem-vindo!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3672/3672725.png" type="image/x-icon">
-    <!-- 
-        Icone utilizado do site (www.flaticon.com), buscando por (desktop), link para acesso 
-        (<a href="https://www.flaticon.com/br/icones-gratis/desktop" title="computador ícones">Computador 
-        ícones criados por Freepik - Flaticon</a>) 
-
-        Icone utilizado do site (www.flaticon.com), buscando por (paste), link para acesso 
-        (<a href="https://www.flaticon.com/br/icones-gratis/pasta" title="pasta ícones">Pasta 
-        ícones criados por Freepik - Flaticon</a>)
-    -->
 </head>
 <body>
     <div class="container">
         <div class="row mt-5">
             <?php
-                // pegar as pastas existentes
                 $path = "./";
                 $diretorio = dir($path);
                 $num = 0;
@@ -45,17 +35,6 @@
                                         <a href="'.$path.$arquivo.'" class="btn btn-primary">Acessar</a>
                                     </div>
                                 </div>';
-
-
-
-
-
-
-
-                            // echo '<a href="/'.$path.$arquivo.'"><button class="btn btn-outline-success mt-1" style="margin-left:10px">Projeto </button></a>';
-                            // echo "<br> Tipo de arquivo: ".filetype($arquivo);
-                            // echo "<br> Caminho: ".$path;
-                            // echo "<br> Arquivo: ".$arquivo;
                         }
                     }
                 }
